@@ -1,0 +1,31 @@
+{
+  "name": "eslint-config",
+  "version": "0.0.1",
+  "description": "my eslint configs",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@vue/cli-plugin-eslint": "4.4.6",
+    "@vue/cli-service": "4.4.6",
+    "babel-eslint": "10.1.0",
+    "eslint": "7.4.0",
+    "eslint-config-airbnb-base": "14.2.0",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-prefer-arrow": "1.2.1",
+    "eslint-plugin-react": "7.20.3",
+    "eslint-plugin-vue": "6.2.2"
+  },
+  "author": "edward",
+  "license": "ISC",
+  "homepage": "https://github.com/edwmurph/eslint-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edwmurph/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/edwmurph/eslint-config/issues"
+  }
+}
