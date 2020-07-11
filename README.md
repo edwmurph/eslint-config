@@ -5,7 +5,7 @@ My JavaScript Styleguide for ESLint.
 
 # Usage
 
-`npm install @edwmurph/eslint-config`
+`npm install @edwmurph/eslint-config --save-dev`
 
 Then add an `.eslintrc.js` file at the root of the repo with:
 
@@ -15,7 +15,14 @@ module.exports = {
 };
 ```
 
-Also React and Vue configs are available via:
+Also React and Vue config extensions can be added:
 
-- `@edwmurph/eslint-config/react`
-- `@edwmurph/eslint-config/vue`
+```
+module.exports = {
+  extends: [
+    '@edwmurph/eslint-config',
+    // '@edwmurph/eslint-config/react',
+    // '@edwmurph/eslint-config/vue',
+  ]
+};
+```
