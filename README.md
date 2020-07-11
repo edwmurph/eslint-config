@@ -1,4 +1,5 @@
 # eslint-config
+[![npm version](https://badge.fury.io/js/%40edwmurph%2Feslint-config.svg)](https://badge.fury.io/js/%40edwmurph%2Feslint-config)
 
 My JavaScript Styleguide for ESLint.
 
