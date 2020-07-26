@@ -24,7 +24,7 @@ module.exports = {
     'no-await-in-loop': ['off'],
     'object-curly-newline': [0],
     'react/prop-types': [0],
-    "react/jsx-indent": [2, 2],
+    'react/jsx-indent': [2, 2],
   },
 
 };

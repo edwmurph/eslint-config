@@ -28,6 +28,7 @@ module.exports = {
     'no-irregular-whitespace': ['error'],
     semi: [ 'error', 'always' ],
     indent: ['error', 2],
+    quotes: ['error', 'single'],
 
     'prefer-arrow/prefer-arrow-functions': [
       'error',
