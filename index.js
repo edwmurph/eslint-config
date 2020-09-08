@@ -15,6 +15,10 @@ module.exports = {
     es6: true,
   },
 
+  extends: [
+    'eslint:recommended'
+  ],
+
   plugins: [
     'prefer-arrow',
   ],

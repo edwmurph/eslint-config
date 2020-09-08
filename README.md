@@ -15,12 +15,13 @@ module.exports = {
 };
 ```
 
-Also React and Vue config extensions can be added:
+Also Gatsby, React and Vue config extensions can be added:
 
 ```
 module.exports = {
   extends: [
     '@edwmurph/eslint-config',
+    // '@edwmurph/eslint-config/gatsby',
     // '@edwmurph/eslint-config/react',
     // '@edwmurph/eslint-config/vue',
   ]
