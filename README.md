@@ -11,6 +11,7 @@ Then add an `.eslintrc.js` file at the root of the repo with:
 
 ```
 module.exports = {
+  root: true,
   extends: '@edwmurph/eslint-config'
 };
 ```
