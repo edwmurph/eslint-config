@@ -8,6 +8,6 @@ module.exports = {
     {
       ...react,
       files: ['gatsby-*.js', 'src/**/*.js'],
-    }
-  ]
+    },
+  ],
 };

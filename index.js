@@ -14,11 +14,12 @@ module.exports = {
   },
 
   extends: [
-    'eslint:recommended'
+    'eslint:recommended',
   ],
 
   plugins: [
     'prefer-arrow',
+    'node',
   ],
 
   rules: {
@@ -40,6 +41,13 @@ module.exports = {
         classPropertiesAllowed: false,
       },
     ],
+
+    'node/no-exports-assign': 'error',
+    'node/no-extraneous-require': 'error',
+    'node/no-missing-require': 'error',
+    'node/process-exit-as-throw': 'error',
+    'node/no-deprecated-api': 'error',
+    'node/shebang': 'error',
   },
 
 };
