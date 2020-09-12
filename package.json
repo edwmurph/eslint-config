@@ -1,6 +1,6 @@
 {
   "name": "@edwmurph/eslint-config",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "my eslint configs",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
     "eslint-plugin-vue": "6.2.2"
   },
   "author": "edward",
-  "license": "ISC",
+  "license": "MIT",
   "homepage": "https://github.com/edwmurph/eslint-config#readme",
   "repository": {
     "type": "git",
