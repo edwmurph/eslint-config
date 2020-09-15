@@ -25,6 +25,7 @@ module.exports = {
     'object-curly-newline': [0],
     'react/prop-types': [0],
     'react/jsx-indent': [2, 2],
+    'jsx-quotes': ['error', 'prefer-single'],
   },
 
 };
