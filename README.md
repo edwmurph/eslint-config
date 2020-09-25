@@ -3,11 +3,23 @@
 
 My JavaScript Styleguide for ESLint.
 
-# Usage
+# Install
 
 `npm install @edwmurph/eslint-config --save-dev`
 
-Then add an `.eslintrc.js` file at the root of the repo with:
+# Usage
+
+Use npm scripts to lint JS, e.g. `npm run lint`:
+```
+"scripts": {
+  "lint": "eslint .",
+  "lint:fix": "eslint . --fix"
+}
+```
+
+Add an `.eslintrc.js` file at the root of the repo extending the eslint config for the target project type
+
+### Node JS
 
 ```
 module.exports = {
@@ -16,15 +28,35 @@ module.exports = {
 };
 ```
 
-Also Gatsby, React and Vue config extensions can be added:
+### Gatsby JS
 
 ```
 module.exports = {
+  root: true,
+  extends: '@edwmurph/eslint-config/gatsby'
+};
+```
+
+### React
+
+```
+module.exports = {
+  root: true,
   extends: [
     '@edwmurph/eslint-config',
-    // '@edwmurph/eslint-config/gatsby',
-    // '@edwmurph/eslint-config/react',
-    // '@edwmurph/eslint-config/vue',
+    '@edwmurph/eslint-config/react'
+  ]
+};
+```
+
+### Vue
+
+```
+module.exports = {
+  root: true,
+  extends: [
+    '@edwmurph/eslint-config',
+    '@edwmurph/eslint-config/vue'
   ]
 };
 ```
