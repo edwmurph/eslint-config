@@ -1,9 +1,13 @@
-// eslint config overrides for React code
+const index = require('./');
 
+// eslint config overrides for React code
 module.exports = {
+  ...index,
+
   parser: 'babel-eslint',
 
   extends: [
+    ...index.extends,
     'plugin:react/recommended',
     'airbnb-base',
   ],
@@ -15,10 +19,13 @@ module.exports = {
   },
 
   env: {
+    ...index.env,
     browser: true,
   },
 
   rules: {
+    ...index.rules,
+
     'no-alert': 0,
     'class-methods-use-this': 0,
     'no-console': 0,

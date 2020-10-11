@@ -42,10 +42,7 @@ module.exports = {
 ```
 module.exports = {
   root: true,
-  extends: [
-    '@edwmurph/eslint-config',
-    '@edwmurph/eslint-config/react'
-  ]
+  extends: '@edwmurph/eslint-config/react'
 };
 ```
 
@@ -54,9 +51,6 @@ module.exports = {
 ```
 module.exports = {
   root: true,
-  extends: [
-    '@edwmurph/eslint-config',
-    '@edwmurph/eslint-config/vue'
-  ]
+  extends: '@edwmurph/eslint-config/vue'
 };
 ```
