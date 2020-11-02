@@ -28,7 +28,6 @@ module.exports = {
 
     'no-alert': 0,
     'class-methods-use-this': 0,
-    'no-console': 0,
     'no-await-in-loop': ['off'],
     'object-curly-newline': [0],
     'react/prop-types': [0],
