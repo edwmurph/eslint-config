@@ -1,6 +1,6 @@
 {
   "name": "@edwmurph/eslint-config",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "my eslint configs",
   "main": "index.js",
   "scripts": {
@@ -9,16 +9,16 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@vue/cli-plugin-eslint": "4.4.6",
-    "@vue/cli-service": "4.4.6",
+    "@vue/cli-plugin-eslint": "4.5.9",
+    "@vue/cli-service": "4.5.9",
     "babel-eslint": "10.1.0",
-    "eslint": "7.4.0",
-    "eslint-config-airbnb-base": "14.2.0",
-    "eslint-plugin-import": "2.22.0",
+    "eslint": "7.14.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-plugin-import": "2.22.1",
     "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-prefer-arrow": "1.2.1",
-    "eslint-plugin-react": "7.20.3",
-    "eslint-plugin-vue": "6.2.2"
+    "eslint-plugin-prefer-arrow": "1.2.2",
+    "eslint-plugin-react": "7.21.5",
+    "eslint-plugin-vue": "7.1.0"
   },
   "author": "edward",
   "license": "MIT",

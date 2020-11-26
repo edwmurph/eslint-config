@@ -23,11 +23,13 @@ module.exports = {
   ],
 
   rules: {
+    'brace-style': [ 2, '1tbs', { 'allowSingleLine': true } ],
+    'object-curly-spacing': [ 2, 'always' ],
+    'max-statements-per-line': ['error', { max: 1 }],
     'consistent-return': 0,
     'no-console': 0,
     'class-methods-use-this': 0,
     'comma-dangle': ['error', 'always-multiline'],
-    'object-curly-spacing': ['error', 'always'],
     'no-trailing-spaces': ['error'],
     'no-irregular-whitespace': ['error'],
     semi: [ 'error', 'always' ],
