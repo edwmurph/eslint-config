@@ -46,6 +46,15 @@ module.exports = {
 };
 ```
 
+### NextJS
+
+```
+module.exports = {
+  root: true,
+  extends: '@edwmurph/eslint-config/nextjs'
+};
+```
+
 ### Vue
 
 ```
