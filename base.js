@@ -23,6 +23,7 @@ module.exports = {
   ],
 
   rules: {
+    'max-len': [ 2, { code: 100 } ],
     'brace-style': [ 2, '1tbs', { 'allowSingleLine': true } ],
     'object-curly-spacing': [ 2, 'always' ],
     'max-statements-per-line': ['error', { max: 1 }],
