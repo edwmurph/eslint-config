@@ -39,10 +39,12 @@ module.exports = {
     'react/jsx-first-prop-new-line': [1, 'multiline'],
     'react/jsx-max-props-per-line': [1, { when: 'multiline' }],
     'react/jsx-equals-spacing': [1, 'never'],
-    'react/jsx-closing-tag-location': 1,
+    'react/jsx-closing-tag-location': 0,
     'react/jsx-one-expression-per-line': [1, { allow: 'single-child' }],
     'react/jsx-props-no-multi-spaces': 1,
     'react/jsx-tag-spacing': [1, { beforeSelfClosing: 'never', beforeClosing: 'never' }],
+    'react/jsx-curly-spacing': [1, { when: 'never' }],
+    'react/jsx-curly-newline': [1, { multiline: 'forbid', singleline: 'consistent' }],
   },
 
 };
