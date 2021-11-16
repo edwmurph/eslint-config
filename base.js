@@ -18,7 +18,6 @@ module.exports = {
   ],
 
   plugins: [
-    'prefer-arrow',
     'node',
   ],
 
@@ -38,15 +37,6 @@ module.exports = {
     quotes: ['error', 'single'],
 
     'arrow-body-style': 0,
-    'prefer-arrow/prefer-arrow-functions': [
-      'error',
-      {
-        disallowPrototype: true,
-        singleReturnOnly: false,
-        classPropertiesAllowed: false,
-      },
-    ],
-
     'node/no-exports-assign': 'error',
     'node/no-extraneous-require': 'error',
     'node/no-missing-require': 'error',

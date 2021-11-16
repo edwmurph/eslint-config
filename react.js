@@ -4,8 +4,6 @@ const index = require('./');
 module.exports = {
   ...index,
 
-  parser: 'babel-eslint',
-
   extends: [
     ...index.extends,
     'plugin:react/recommended',
