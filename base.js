@@ -29,7 +29,7 @@ module.exports = {
     'consistent-return': 0,
     'no-console': 0,
     'class-methods-use-this': 0,
-    'comma-dangle': ['error', 'always-multiline'],
+    'comma-dangle': ['error', 'never'],
     'no-trailing-spaces': ['error'],
     'no-irregular-whitespace': ['error'],
     semi: [ 'error', 'always' ],
