@@ -33,7 +33,7 @@ module.exports = {
     'no-trailing-spaces': ['error'],
     'no-irregular-whitespace': ['error'],
     semi: [ 'error', 'always' ],
-    indent: ['error', 2],
+    indent: ['error', 2, { SwitchCase: 1 }],
     quotes: ['error', 'single'],
 
     'arrow-body-style': 0,
