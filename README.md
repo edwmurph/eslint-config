@@ -63,3 +63,12 @@ module.exports = {
   extends: '@edwmurph/eslint-config/vue'
 };
 ```
+
+also for vue configs you need to update your lint scripts to look for vue files:
+
+```
+"scripts": {
+  "lint": "eslint . --ext .js,.vue",
+  "lint:fix": "eslint . --fix --ext .js,.vue"
+}
+```
