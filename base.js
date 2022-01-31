@@ -1,24 +1,24 @@
 module.exports = {
 
   parserOptions: {
-    ecmaVersion: 2019,
+    ecmaVersion: 2021,
     ecmaFeatures: {
-      impliedStrict: true,
-    },
+      impliedStrict: true
+    }
   },
 
   env: {
     browser: false,
     node: true,
-    es6: true,
+    es6: true
   },
 
   extends: [
-    'eslint:recommended',
+    'eslint:recommended'
   ],
 
   plugins: [
-    'node',
+    'node'
   ],
 
   rules: {
@@ -42,7 +42,7 @@ module.exports = {
     'node/no-missing-require': 'error',
     'node/process-exit-as-throw': 'error',
     'node/no-deprecated-api': 'error',
-    'node/shebang': 'error',
-  },
+    'node/shebang': 'error'
+  }
 
 };
