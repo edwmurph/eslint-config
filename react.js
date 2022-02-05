@@ -7,18 +7,18 @@ module.exports = {
   extends: [
     ...index.extends,
     'plugin:react/recommended',
-    'airbnb-base',
+    'airbnb-base'
   ],
 
   settings: {
     react: {
-      version: 'detect',
-    },
+      version: 'detect'
+    }
   },
 
   env: {
     ...index.env,
-    browser: true,
+    browser: true
   },
 
   rules: {
@@ -42,7 +42,7 @@ module.exports = {
     'react/jsx-props-no-multi-spaces': 1,
     'react/jsx-tag-spacing': [1, { beforeSelfClosing: 'never', beforeClosing: 'never' }],
     'react/jsx-curly-spacing': [1, { when: 'never' }],
-    'react/jsx-curly-newline': [1, { multiline: 'forbid', singleline: 'consistent' }],
-  },
+    'react/jsx-curly-newline': [1, { multiline: 'forbid', singleline: 'consistent' }]
+  }
 
 };

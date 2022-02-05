@@ -7,7 +7,7 @@ module.exports = {
   overrides: [
     {
       ...react,
-      files: ['gatsby-*.js', 'src/**/*.js'],
-    },
-  ],
+      files: ['gatsby-*.js', 'src/**/*.js']
+    }
+  ]
 };

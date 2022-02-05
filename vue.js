@@ -6,12 +6,12 @@ module.exports = {
 
   extends: [
     ...index.extends,
-    'plugin:vue/essential',
+    'plugin:vue/vue3-essential'
   ],
 
   env: {
     ...index.env,
-    browser: true,
+    browser: true
   },
 
   rules: {
@@ -19,7 +19,7 @@ module.exports = {
 
     'no-alert': 0,
     'class-methods-use-this': 0,
-    'no-console': 0,
-  },
+    'no-console': 0
+  }
 
 };

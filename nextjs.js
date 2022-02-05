@@ -6,11 +6,11 @@ module.exports = {
 
   extends: [
     ...react.extends,
-    'plugin:@next/next/recommended',
+    'plugin:@next/next/recommended'
   ],
 
   rules: {
     ...react.rules,
-    'react/react-in-jsx-scope': 'off',
-  },
+    'react/react-in-jsx-scope': 'off'
+  }
 };
