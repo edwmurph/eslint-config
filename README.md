@@ -102,7 +102,7 @@ also for vue configs you need to update your lint scripts to look for vue files:
 }
 ```
 
-also currently eslint@8 is [not compatible](https://github.com/vuejs/vue-cli/issues/6759) with @vue/cli-plugin-eslint@4.5 so a workaround is to just also install an older verison of eslint via:
+also currently eslint@8 is [not compatible](https://github.com/vuejs/vue-cli/issues/6759) with @vue/cli-plugin-eslint@4.5 so you may temporarilly need to workaround this by also installing an older verison of eslint via:
 
 ```bash
 npm install -d eslint@6.7
