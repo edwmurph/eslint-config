@@ -11,6 +11,7 @@ module.exports = {
 
   env: {
     ...index.env,
+    'vue/setup-compiler-macros': true,
     browser: true
   },
 
