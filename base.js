@@ -18,6 +18,7 @@ module.exports = {
   ],
 
   plugins: [
+    '@starryinternet/starry',
     'node'
   ],
 
@@ -35,8 +36,18 @@ module.exports = {
     semi: [ 'error', 'always' ],
     indent: ['error', 2, { SwitchCase: 1 }],
     quotes: ['error', 'single'],
-
     'arrow-body-style': 0,
+    'template-curly-spacing': [ 2, 'always' ],
+    'prefer-const': 2,
+    'no-const-assign': 2,
+
+    'space-in-parens': 0,
+    '@starryinternet/starry/space-in-parens': [
+      2,
+      'always',
+      { 'exceptions': [ '{}', '[]', 'empty' ] }
+    ],
+
     'node/no-exports-assign': 'error',
     'node/no-extraneous-require': 'error',
     'node/no-missing-require': 'error',
