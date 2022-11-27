@@ -7,7 +7,8 @@ module.exports = {
   extends: [
     ...index.extends,
     'plugin:react/recommended',
-    'airbnb-base'
+    'airbnb-base',
+    'plugin:react/jsx-runtime'
   ],
 
   settings: {
