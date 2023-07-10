@@ -1,6 +1,6 @@
 {
   "name": "@edwmurph/eslint-config",
-  "version": "5.0.3",
+  "version": "6.0.0",
   "description": "my eslint configs",
   "main": "index.js",
   "scripts": {
@@ -9,10 +9,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@next/eslint-plugin-next": "13.4.7",
+    "@next/eslint-plugin-next": "13.4.9",
     "@starryinternet/eslint-plugin-starry": "8.1.0",
     "@vue/cli-plugin-eslint": "5.0.8",
-    "eslint": "8.43.0",
+    "eslint": "8.44.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-plugin-import": "2.27.5",
     "eslint-plugin-node": "11.1.0",
