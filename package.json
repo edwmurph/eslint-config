@@ -1,8 +1,18 @@
 {
   "name": "@edwmurph/eslint-config",
-  "version": "6.0.0",
-  "description": "my eslint configs",
+  "version": "7.0.0",
+  "description": "Flat ESLint configs for Node.js and React",
   "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./nodejs": "./nodejs.js",
+    "./react": "./react.js"
+  },
+  "files": [
+    "index.js",
+    "nodejs.js",
+    "react.js"
+  ],
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -10,18 +20,18 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@next/eslint-plugin-next": "13.4.9",
-    "@starryinternet/eslint-plugin-starry": "8.1.0",
-    "@vue/cli-plugin-eslint": "5.0.8",
-    "eslint": "8.44.0",
-    "eslint-config-airbnb-base": "15.0.0",
-    "eslint-plugin-import": "2.27.5",
-    "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-react": "7.32.2",
-    "eslint-plugin-vue": "9.15.1"
+    "@eslint/js": "^9.39.4",
+    "eslint": "^9.39.4",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-n": "^17.24.0",
+    "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^17.5.0",
+    "prettier": "^3.8.3"
   },
   "engines": {
-    "node": ">= 18"
+    "node": ">=24"
   },
   "author": "edward",
   "license": "MIT",
@@ -32,5 +42,8 @@
   },
   "bugs": {
     "url": "https://github.com/edwmurph/eslint-config/issues"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }

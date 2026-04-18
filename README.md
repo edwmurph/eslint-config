@@ -1,109 +1,50 @@
 # eslint-config
 [![npm version](https://badge.fury.io/js/%40edwmurph%2Feslint-config.svg)](https://badge.fury.io/js/%40edwmurph%2Feslint-config)
 
-My JavaScript Styleguide for ESLint.
+Flat ESLint configs for Node.js and React.
 
-# Install
+## Install
 
-`npm install @edwmurph/eslint-config --save-dev`
-
-# Usage
-
-Use npm scripts to lint JS, e.g. `npm run lint`:
-```json
-"scripts": {
-  "lint": "eslint .",
-  "lint:fix": "eslint . --fix"
-}
+```bash
+npm install --save-dev @edwmurph/eslint-config
 ```
 
-alternatively if you are using the Vue config, you'll also need to tell eslint to look for `.vue` files:
+## Usage
 
-```json
-"scripts": {
-  "lint": "eslint . --ext .js,.vue",
-  "lint:fix": "eslint . --fix --ext .js,.vue"
-}
-```
+This package exports flat configs. Create an `eslint.config.js` file in your project.
 
-Add an `.eslintrc.js` file at the root of the repo extending the eslint config for the target project type
+### Node.js
 
-### Node JS
+```js
+const nodejsConfig = require('@edwmurph/eslint-config');
 
-```javascript
-module.exports = {
-  root: true,
-  extends: [
-    '@edwmurph/eslint-config',
-    // uncomment this if you are building a chrome extension
-    // '@edwmurph/eslint-config/webextensions'
-  ]
-};
-```
-
-### Gatsby JS
-
-```javascript
-module.exports = {
-  root: true,
-  extends: [
-    '@edwmurph/eslint-config/gatsby',
-    // uncomment this if you are building a chrome extension
-    // '@edwmurph/eslint-config/webextensions'
-  ]
-};
+module.exports = [...nodejsConfig];
 ```
 
 ### React
 
-```javascript
-module.exports = {
-  root: true,
-  extends: [
-    '@edwmurph/eslint-config/react',
-    // uncomment this if you are building a chrome extension
-    // '@edwmurph/eslint-config/webextensions'
-  ]
-};
+```js
+const reactConfig = require('@edwmurph/eslint-config/react');
+
+module.exports = [...reactConfig];
 ```
 
-### NextJS
-
-```javascript
-module.exports = {
-  root: true,
-  extends: [
-    '@edwmurph/eslint-config/nextjs',
-    // uncomment this if you are building a chrome extension
-    // '@edwmurph/eslint-config/webextensions'
-  ]
-};
-```
-
-### Vue 3
-
-```javascript
-module.exports = {
-  root: true,
-  extends: [
-    '@edwmurph/eslint-config/vue',
-    // uncomment this if you are building a chrome extension
-    // '@edwmurph/eslint-config/webextensions'
-  ]
-};
-```
-
-also for vue configs you need to update your lint scripts to look for vue files:
+## Lint Scripts
 
 ```json
-"scripts": {
-  "lint": "eslint . --ext .js,.vue",
-  "lint:fix": "eslint . --fix --ext .js,.vue"
+{
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  }
 }
 ```
 
-also currently eslint@8 is [not compatible](https://github.com/vuejs/vue-cli/issues/6759) with @vue/cli-plugin-eslint@4.5 so you may temporarilly need to workaround this by also installing an older verison of eslint via:
+## Prettier Integration
 
-```bash
-npm install -d eslint@6.7
-```
+Both `nodejs` and `react` configs include `eslint-plugin-prettier/recommended`, which applies:
+
+- `eslint-plugin-prettier`
+- `eslint-config-prettier`
+
+Running `eslint --fix` will apply Prettier formatting for backend and frontend code.

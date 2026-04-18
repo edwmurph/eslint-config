@@ -3,7 +3,7 @@
 const js = require("@eslint/js");
 const globals = require("globals");
 const importPlugin = require("eslint-plugin-import");
-const reactPlugin = require("eslint-plugin-react");
+const n = require("eslint-plugin-n");
 const prettierRecommended = require("eslint-plugin-prettier/recommended");
 
 module.exports = [
@@ -12,31 +12,19 @@ module.exports = [
     ignores: ["**/node_modules/**", "**/dist/**", "**/coverage/**"],
   },
   js.configs.recommended,
-  reactPlugin.configs.flat.recommended,
-  reactPlugin.configs.flat["jsx-runtime"],
   {
-    name: "@edwmurph/eslint-config/react",
-    files: ["**/*.js", "**/*.jsx", "**/*.mjs", "**/*.cjs"],
+    name: "@edwmurph/eslint-config/nodejs",
+    files: ["**/*.js", "**/*.cjs", "**/*.mjs"],
     languageOptions: {
       ecmaVersion: "latest",
-      sourceType: "module",
-      parserOptions: {
-        ecmaFeatures: {
-          jsx: true,
-        },
-      },
+      sourceType: "commonjs",
       globals: {
-        ...globals.browser,
         ...globals.node,
       },
     },
     plugins: {
       import: importPlugin,
-    },
-    settings: {
-      react: {
-        version: "detect",
-      },
+      n,
     },
     rules: {
       camelcase: "off",
@@ -52,13 +40,20 @@ module.exports = [
       "class-methods-use-this": "off",
       "comma-dangle": ["error", "never"],
       "arrow-body-style": "off",
-      "no-alert": "off",
-      "no-await-in-loop": "off",
-      "object-curly-newline": "off",
-      "jsx-quotes": ["error", "prefer-single"],
-      "react/prop-types": "off",
-      "react/react-in-jsx-scope": "off",
+      "n/no-exports-assign": "error",
+      "n/no-extraneous-require": "error",
+      "n/no-missing-require": "error",
+      "n/process-exit-as-throw": "error",
+      "n/no-deprecated-api": "error",
+      "n/shebang": "error",
       "import/no-unresolved": "off",
+    },
+  },
+  {
+    name: "@edwmurph/eslint-config/nodejs-modules",
+    files: ["**/*.mjs"],
+    languageOptions: {
+      sourceType: "module",
     },
   },
   prettierRecommended,
