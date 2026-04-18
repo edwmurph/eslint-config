@@ -4,6 +4,7 @@ const js = require("@eslint/js");
 const globals = require("globals");
 const importPlugin = require("eslint-plugin-import");
 const n = require("eslint-plugin-n");
+const unicornPlugin = require("eslint-plugin-unicorn").default;
 const prettierRecommended = require("eslint-plugin-prettier/recommended");
 
 module.exports = [
@@ -25,6 +26,7 @@ module.exports = [
     plugins: {
       import: importPlugin,
       n,
+      unicorn: unicornPlugin,
     },
     rules: {
       camelcase: "off",
@@ -47,6 +49,10 @@ module.exports = [
       "n/no-deprecated-api": "error",
       "n/shebang": "error",
       "import/no-unresolved": "off",
+      "unicorn/filename-case": [
+        "error",
+        { case: "kebabCase", multipleFileExtensions: true },
+      ],
     },
   },
   {

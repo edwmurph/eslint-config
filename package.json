@@ -1,6 +1,6 @@
 {
   "name": "@edwmurph/eslint-config",
-  "version": "7.0.0",
+  "version": "7.0.1",
   "description": "Flat ESLint configs for Node.js and React",
   "main": "index.js",
   "exports": {
@@ -27,6 +27,7 @@
     "eslint-plugin-n": "^17.24.0",
     "eslint-plugin-prettier": "^5.5.5",
     "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-unicorn": "64.0.0",
     "globals": "^17.5.0",
     "prettier": "^3.8.3"
   },

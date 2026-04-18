@@ -4,6 +4,7 @@ const js = require("@eslint/js");
 const globals = require("globals");
 const importPlugin = require("eslint-plugin-import");
 const reactPlugin = require("eslint-plugin-react");
+const unicornPlugin = require("eslint-plugin-unicorn").default;
 const prettierRecommended = require("eslint-plugin-prettier/recommended");
 
 module.exports = [
@@ -32,6 +33,7 @@ module.exports = [
     },
     plugins: {
       import: importPlugin,
+      unicorn: unicornPlugin,
     },
     settings: {
       react: {
@@ -59,6 +61,10 @@ module.exports = [
       "react/prop-types": "off",
       "react/react-in-jsx-scope": "off",
       "import/no-unresolved": "off",
+      "unicorn/filename-case": [
+        "error",
+        { case: "kebabCase", multipleFileExtensions: true },
+      ],
     },
   },
   prettierRecommended,
